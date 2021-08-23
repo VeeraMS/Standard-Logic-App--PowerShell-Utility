@@ -1,5 +1,5 @@
-# Consumption-Logic-App--PowerShell-Utility
-This PowerShell utility lets you do bulk operations like cancel , resubmit runs on the consumption Logic App.
+# Standard-Logic-App--PowerShell-Utility
+This PowerShell utility lets you do bulk operations like cancel , resubmit runs on the Standard Logic App Workflows.
 
 1.Copy the PowerShell script desired folder
 2.Set up Azure Service Principal - Contributor access on the Subscription. 
@@ -13,9 +13,16 @@ This PowerShell utility lets you do bulk operations like cancel , resubmit runs 
 
 For User Sign-In option:
 
-.\LogicAppUtility.ps1  -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation 'BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
+		.\Standard_LogicApp_Utility.ps1 -SubscriptionId '5bbb64a9-f724-405e-bc6b-c8c26aa22551' -ResourceGroupName 'LAV2_HA_DR_PrimaryRegion' -LogicAppName 'LAV2Primary' -WorkflowName 'recurrencetrigger' -Operation 'BulkResubmitCancelledRuns ' -StartTime '2021-08-19T10:47:07.41621Z'
 
 For Azure AD SPN:
-		.\LogicAppUtility.ps1 -ClientId 'Enter ClientId' -TenantId 'Enter TenantId' -Secret 'Enter Secret' -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation 'BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
-		
+
+	.\LogicAppUtility-V2.ps1 -ClientId $ClientId -TenantId $TenantId -Secret $Secret -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -LogicAppName $LogicAppName -Operation $Operation -WorkFlowName $WorkFlowName -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
+
+
+**Parameters definition**:
+
+![image](https://user-images.githubusercontent.com/82495659/130448273-61164f1d-207d-4df4-a161-f741c22fd2b0.png)
+
+	
 7.Validate the text file gets created in the same folder for list of run ids executed
