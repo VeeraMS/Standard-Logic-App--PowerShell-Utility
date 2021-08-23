@@ -29,7 +29,8 @@ For Azure AD SPN:
 
 **Parameters definition**:
 
-![image](https://user-images.githubusercontent.com/82495659/130448273-61164f1d-207d-4df4-a161-f741c22fd2b0.png)
+![image](https://user-images.githubusercontent.com/82495659/130448718-875dbd14-a3d9-45cf-8a77-ae9c8a3a0d70.png)
+
 
 	
 7.Validate the text file gets created in the same folder for list of run ids executed
