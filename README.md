@@ -21,11 +21,11 @@ The below are the supported operations with this utility.
        
        Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
        
-5. Change the directory to the PowerShell script copied folder in first step.
+5. Change the directory to the PowerShell script folder where its available.
       
        cd  'PowerShellScriptFolderPath'
       
-6. Execute the command to perform the different mentioned operations on Logic App
+6. Execute the one of the command below to perform the specified bulk operation on Standard Logic App workflow
 
 For User Sign-In option:
 
