@@ -43,3 +43,9 @@ For Azure AD SPN:
 
 	
 7. Log file gets generated in the script folder with the Run ids and their Start time, you may use these to cross verify the operation in the portal
+
+**Note:**
+
+1. Not recommended to run directly on the Production environment
+
+2. It is tested with limited test cases and volume of runs, validate this in test environment prior to execute in Production.
