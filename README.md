@@ -1,7 +1,7 @@
 # Standard-Logic-App--PowerShell-Utility
 This PowerShell utility helps you to perform bulk operations such as bulk Cancel, bulk resubmit runs on the Standard Logic App Workflows.
 
-The below are the supported operations with this utility.
+Below are the supported operations with this utility.
 
 1. BulkCancel - Cancel running instances
 2. BulkResubmitFailedRuns - Resubmits failed runs
@@ -10,7 +10,7 @@ The below are the supported operations with this utility.
 
 **Steps to follow for executing the script:**
 
-1. Copy the PowerShell script desired folder
+1. Copy the PowerShell script to thedesired folder
 
 2. Set up Azure Service Principal - Contributor access on the Subscription. 
  https://blog.jongallant.com/2017/11/azure-rest-apis-postman/
@@ -25,7 +25,7 @@ The below are the supported operations with this utility.
       
        cd  'PowerShellScriptFolderPath'
       
-6. Execute the one of the command below to perform the specified bulk operation on Standard Logic App workflow
+6. Execute one of the below commands to perform the specified bulk operation on Standard Logic App workflow
 
 For User Sign-In option:
 
