@@ -1,0 +1,21 @@
+# Consumption-Logic-App--PowerShell-Utility
+This PowerShell utility lets you do bulk operations like cancel , resubmit runs on the consumption Logic App.
+
+1.Copy the PowerShell script desired folder
+2.Set up Azure Service Principal - Contributor access on the Subscription. 
+ https://blog.jongallant.com/2017/11/azure-rest-apis-postman/
+3.Open PowerShell with 'Run As administrator Privileges'
+4.Run the below command to bypass the execution policy  and accept -Y
+       Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+5.Change the directory to the PowerShell script copied folder in first step.
+        cd  'PowerShellScriptFolderPath'
+6.Execute the command to perform the different mentioned operations on Logic App
+
+For User Sign-In option:
+
+.\LogicAppUtility.ps1  -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation 'BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
+
+For Azure AD SPN:
+		.\LogicAppUtility.ps1 -ClientId 'Enter ClientId' -TenantId 'Enter TenantId' -Secret 'Enter Secret' -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation 'BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
+		
+7.Validate the text file gets created in the same folder for list of run ids executed
