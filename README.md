@@ -42,4 +42,4 @@ For Azure AD SPN:
 
 
 	
-7. Validate the text file gets created in the same folder for list of run ids executed
+7. Log file gets generated in the script folder with the Run ids and their Start time, you may use these to cross verify the operation in the portal
