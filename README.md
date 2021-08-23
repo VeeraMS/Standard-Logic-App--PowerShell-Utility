@@ -23,7 +23,7 @@ The below are the supported operations with this utility.
        
 5. Change the directory to the PowerShell script copied folder in first step.
       
-      cd  'PowerShellScriptFolderPath'
+       cd  'PowerShellScriptFolderPath'
       
 6. Execute the command to perform the different mentioned operations on Logic App
 
