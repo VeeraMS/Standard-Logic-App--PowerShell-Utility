@@ -35,14 +35,12 @@ For Azure AD SPN:
 
 	.\Standard_LogicApp_Utility.ps1 -ClientId 'ClientId' -TenantId 'TenantId' -Secret 'Client Secret' -SubscriptionId 'SubscriptionId' -ResourceGroupName 'ResourceGroupName' -LogicAppName 'LogicAppName' -Operation 'OperationName' -WorkFlowName 'WorkFlowName' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
 
+7. Log file gets generated in the script folder with the Run ids and their Start time, you may use these to cross verify the operation in the portal
 
 **Parameters definition**:
 
-![image](https://user-images.githubusercontent.com/82495659/130448718-875dbd14-a3d9-45cf-8a77-ae9c8a3a0d70.png)
+![image](https://user-images.githubusercontent.com/82495659/130601462-58b65b4d-eb09-4621-8570-1d3cc6dca9c0.png)
 
-
-	
-7. Log file gets generated in the script folder with the Run ids and their Start time, you may use these to cross verify the operation in the portal
 
 **Note:**
 
