@@ -29,11 +29,11 @@ Below are the supported operations with this utility.
 
 For User Sign-In option:
 
-	.\Standard_LogicApp_Utility.ps1 -SubscriptionId '5bbb64a9-f724-405e-bc6b-c8c26aa22551' -ResourceGroupName 'LAV2_HA_DR_PrimaryRegion' -LogicAppName 'LAV2Primary' -WorkflowName 'recurrencetrigger' -Operation 'BulkResubmitCancelledRuns ' -StartTime '2021-08-19T10:47:07.41621Z'
+	.\Standard_LogicApp_Utility.ps1 -SubscriptionId 'Subscription ID' -ResourceGroupName 'Resource Group Name' -LogicAppName 'Logic App Name' -WorkflowName 'WorkflowName' -Operation 'OperationName' -StartTime '2021-08-19T10:47:07.41621Z' -EndTime '2020-11-02T16:38:00.000Z’
 
 For Azure AD SPN:
 
-	.\Standard_LogicApp_Utility.ps1 -ClientId $ClientId -TenantId $TenantId -Secret $Secret -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -LogicAppName $LogicAppName -Operation $Operation -WorkFlowName $WorkFlowName -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
+	.\Standard_LogicApp_Utility.ps1 -ClientId 'ClientId' -TenantId 'TenantId' -Secret 'Client Secret' -SubscriptionId 'SubscriptionId' -ResourceGroupName 'ResourceGroupName' -LogicAppName 'LogicAppName' -Operation 'OperationName' -WorkFlowName 'WorkFlowName' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
 
 
 **Parameters definition**:
